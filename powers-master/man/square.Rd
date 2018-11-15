@@ -6,11 +6,11 @@
 \alias{reciprocal}
 \title{Apply a useful power}
 \usage{
-square(x, plot_it = FALSE)
+square(x, a = 2, plot_it = FALSE)
 
-cube(x, plot_it = FALSE)
+cube(x, a = 3, plot_it = FALSE)
 
-reciprocal(x, plot_it = FALSE)
+reciprocal(x, a = -1, plot_it = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared or cubed.}

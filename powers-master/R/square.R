@@ -25,13 +25,19 @@
 #' reciprocal(2)
 #' @rdname square
 #' @export
-square <- function(x, plot_it=FALSE) pow(x, a=2, plot_it=plot_it)
+square <- function(x, a=2, plot_it = FALSE) {
+    x^a
+}
 
 #' @rdname square
 #' @export
-cube <- function(x, plot_it=FALSE) pow(x, a=3, plot_it=plot_it)
+cube <- function(x, a=3, plot_it=FALSE) {
+    x^a
+}
 
 
 #' @rdname square
 #' @export
-reciprocal <- function(x, plot_it=FALSE) pow(x, a=-1, plot_it=plot_it)
+reciprocal <- function(x, a=-1, plot_it=FALSE) {
+    x^a
+}
