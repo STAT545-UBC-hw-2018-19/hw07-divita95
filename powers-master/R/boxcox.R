@@ -2,14 +2,16 @@
 #'
 #'Compute the Box-Cox power transformation of a variable.
 #'
-#' @param x numeric vector to transform, p power (0 = log); if p is a vector then a matrix of transformed values with columns labelled by powers will be returned.
+#' @param x numeric vector to transform
+#' @param p power (0 = log); if p is a vector then a matrix of transformed values with columns labelled by powers will be returned.
 #' @return a vector or matrix of transformed values.
+#' @rdname bctrans
+#' @examples
+#' bctrans(1:10,3)
 #' @export
 
 
-
-
-boxcox <- function(x, p) {
+bctrans <- function(x, p) {
     if(p==0) {
         return(log(x))
     }  else {
